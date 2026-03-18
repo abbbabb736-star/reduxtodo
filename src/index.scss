@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: sans-serif;
+  color: #2d2d2d;
+  background:
+    linear-gradient(145deg, #f2f8f4, #d9ede5 70%),
+}
+#root {
+  padding: 10px 16px;
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: #1b5e20;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.subtitle {
+  color: #2e7d32;
+  margin: 0 0 18px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.app {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.14);
+  padding: 20px;
+  width: min(96vw, 420px);
+}
+
+.form-row {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #cfd8dc;
+  border-radius: 6px;
+}
+
+.btn {
+  padding: 10px 14px;
+  background-color: #6abf69;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  background-color: #57a45a;
+}
+
+.items-list {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+
+.item,
+.empty {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-top: 8px;
+  border: 1px solid #e5eee6;
+  border-radius: 6px;
+  background: #f7fdfa;
+}
+
+.remove-btn {
+  background: #ffffff;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  padding: 6px 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.remove-btn:hover {
+  background-color: #c62828;
+  transform: scale(1.1);
+}
+
+.brand-logo {
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+}
