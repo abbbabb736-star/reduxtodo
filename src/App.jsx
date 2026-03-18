@@ -2,14 +2,14 @@ import React, { useState } from "react";
 import logo from "./assets/icons/logo.svg";
 
 function App() {
-  const [text, setText] = useState(""); 
-  const [items, setItems] = useState([]); 
+  const [text, setText] = useState("");
+  const [items, setItems] = useState([]);
 
   const handleAdd = () => {
     const value = text.trim();
     if (!value) return;
 
-    setItems(prev => [...prev, { id: Date.now(), text: value }]);
+    setItems((prev) => [...prev, { id: Date.now(), text: value }]);
     setText("");
   };
 
@@ -38,7 +38,9 @@ function App() {
               {item.text}
               <button
                 className="remove-btn"
-                onClick={() => dispatch(removeItem(item.id))}
+                onClick={() =>
+                  setItems((prev) => prev.filter((i) => i.id !== item.id))
+                }
               >
                 ❌
               </button>
